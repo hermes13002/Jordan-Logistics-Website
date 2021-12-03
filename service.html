@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Jordan Logistics</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    				
+  /*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+
+/* Navigation header */
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+
+nav{
+  background: #0082e6;
+/*   background: rgba(255,255,255,.5); */
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+label.logo span{
+  color: purple;
+  font-size: 38px;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 0px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: white;
+  color: black;
+  transition: 1s;
+  border: 1px solid white;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  nav ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+  				
+
+/* services */
+* {
+  box-sizing: border-box;
+}
+
+
+.services{
+    margin: 5% 2% 5% 2%;
+    height: 700%;
+    border: 1px solid white;
+    background-color: #ddddda;
+}
+
+.ser-head{
+		 font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-stretch: 3px;
+    font-size: 30px;
+    margin-top: 3%;
+    margin-bottom: 1%;
+    color: #039be5;
+}
+
+.serv-body{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 0 10px 3% 10px;
+    font-size: 20px;
+}
+
+.ser-body{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 0 10px 10% 10px;
+    font-size: 20px;
+    color: #039be5;
+}
+
+
+.service-head{
+				font-weight: bold;
+				font-size: 25px;
+				color: #039be5;
+				margin-top: 5%;
+}
+
+. service-body{
+				margin-top: 3%;
+}
+
+i{
+    font-size: 35px;
+    color: #039be5;
+    transition: color 0.3s ease;
+    margin-top: 5%;
+    margin-bottom: -5%;
+}
+}
+    
+}
+
+/* Float four columns side by side */
+.column{
+  float: left;
+  width: 33%;
+  
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+    				
+.container a{
+    display: inline-block;
+    background: #039be5;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 12px 23px;
+    margin-top: 20px;
+    margin-left: 2%;
+    border-radius: 25px;
+    border: 2px solid white;
+    transition: all 0.7s ease;
+}
+.container a:hover{
+    color: #039be5;
+    background: white;
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 600px){
+				.container a{
+								margin-left: 0%;
+				}
+}
+
+
+
+
+/* Footer Section */
+.footer {
+display: flex;
+flex-flow: row wrap;
+padding: 50px;
+color: #039be5;
+background-color: #ddddda;
+margin-bottom: 0px;
+}
+
+.footer > * {
+flex:  1 100%;
+}
+
+.l-footer {
+margin-right: 1%;
+margin-bottom: 2%;
+}
+
+h2 {
+font-weight: 400;
+font-size: 18px;
+}
+
+.footer ul {
+list-style: none;
+padding-left: 0;
+}
+
+.footer li {
+line-height: 2em;
+}
+
+.footer a {
+text-decoration: none;
+}
+
+.r-footer {
+display: flex;
+flex-flow: row wrap;
+}
+
+.r-footer > * {
+flex: 5 50%;
+margin-left: 5%;
+}
+
+.box a {
+color: black;
+}
+
+.box a:hover{
+color: black;
+text-decoration: underline;
+}
+
+.h-box {
+column-count: 2;
+column-gap: 1.25em;
+}
+
+.b-footer {
+text-align: center;
+color: #999;
+padding-top: 70px;
+}
+
+
+
+@media screen and (min-width: 600px) {
+.r-footer > * {
+flex: 1;
+}
+
+.features {
+flex-grow: 2;
+}
+
+.l-footer {
+flex: 1 0px;
+}
+
+.r-footer {
+flex: 2 0px;
+}
+}
+
+
+
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-align-right"></i>
+      </label>
+      <label class="logo">JLS</label>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="service.html">Services</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+								 
+
+
+
+<div class="services">
+   <div class="serv-body">
+      <div class="ser-head">SERVICES</div>
+      <div class="ser-body">Our Services Include:</div>
+      
+<i class="fas fa-shipping-fast"></i>
+<div class="service-head">Transportation of Goods</div>
+<div class="service body">
+    				We transport and deliver goods to desired location from ports, habours, airport, train station, e.t.c.</div><hr/>
+
+<i class="fas fa-ship"></i>
+<div class="service-head">Inventory Management</div>
+<div class="service body">
+    				We formally manage the timing and quantities of goods to be ordered and stocked by you or your organisation so that the demand will always be satisfied without excess expenditure.</div><hr/>
+
+<i class="fas fa-shipping-fast"></i>
+<div class="service-head">Freight Transportation</div>
+<div class="service body">
+    				We also handle the goods or items in transport if any damage or casuality and also payment for transportation.</div><hr/>
+
+   </div>
+</div>
+
+
+
+								
+								 
+<footer class="footer">
+ <div class="l-footer">
+   <p>
+<div class="container">
+  <div style="text-align:center">
+    <h1 style="color: #039be5">Contact Us</h1>
+    <p>To send a message, tap the button below.
+     <br> <a href="contact.html">Contact</a></br</p>
+  </div>  
+</div>
+   </p>
+ </div>    				
+ <ul class="r-footer">
+  <li>
+   <h2>ADDRESS</h2>
+   <ul class="box">
+    <li><a href="#">No 14, Itabiyi Street,</br> Petedo, Ikeja,</br>Lagos State, Nigeria.</a></li>
+    <h2 style="margin-top:5%;">CONTACT INFO</h2>
+    <li><a href="#">+2348036586161, +2348164397562</a></li>
+    <li><a href="#">jordanservices@gmail.com</a></li>
+   </ul>
+  </li>
+  <li class="features">
+  <h2 style="margin-top:5%;">SOCIAL LINKS</h2>
+   <ul class="box h-box">
+    <li><a href="#">Facebook</a></li>
+    <li><a href="#">Instagram</a></li>
+    <li><a href="#">Twitter</a></li>
+    <li><a href="#">WhatsApp</a></li>
+   </ul>
+  </li>
+  <li>
+  <h2 style="margin-top:5%;">LEGAL</h2>
+  <ul class="box">
+   <li><a href="#">*Privacy Policy</a></li>
+   <li><a href="#">*Terms and Conditions</a></li>
+   <li><a href="#">*Refund Policy</a></li>
+  </ul>
+  </li>
+ </ul>
+ <div class="b-footer">
+ 				<hr/>
+ <p>All Rights Reserved by Jordan Logistics | © 2021 <br/> Developed by Hermes.co</p>
+ </div>
+</footer>
+
+								
+
+				</body>
+</html>
